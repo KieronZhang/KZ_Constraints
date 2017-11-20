@@ -16,8 +16,21 @@
 		AE1AAA6D1EC0B4550005B5C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1AAA6B1EC0B4550005B5C7 /* LaunchScreen.storyboard */; };
 		AE1AAA791EC0B49C0005B5C7 /* ConstraintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1AAA761EC0B49C0005B5C7 /* ConstraintViewController.m */; };
 		AE1AAA7A1EC0B49C0005B5C7 /* MasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1AAA781EC0B49C0005B5C7 /* MasonryViewController.m */; };
-		AEDC0F941FC1D12700752728 /* KZ_ConstraintsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEDC0F931FC1D12700752728 /* KZ_ConstraintsFramework.framework */; };
+		AEA5EBE21FC2A8B1003D7BD1 /* KZ_ConstraintsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA5EBE11FC2A8B1003D7BD1 /* KZ_ConstraintsFramework.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AEDC0F721FC1D03200752728 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		656D09A542458938DE45CFA8 /* Pods-KZ_Constraints.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KZ_Constraints.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KZ_Constraints/Pods-KZ_Constraints.debug.xcconfig"; sourceTree = "<group>"; };
@@ -36,7 +49,7 @@
 		AE1AAA761EC0B49C0005B5C7 /* ConstraintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstraintViewController.m; sourceTree = "<group>"; };
 		AE1AAA771EC0B49C0005B5C7 /* MasonryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryViewController.h; sourceTree = "<group>"; };
 		AE1AAA781EC0B49C0005B5C7 /* MasonryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasonryViewController.m; sourceTree = "<group>"; };
-		AEDC0F931FC1D12700752728 /* KZ_ConstraintsFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KZ_ConstraintsFramework.framework; sourceTree = "<group>"; };
+		AEA5EBE11FC2A8B1003D7BD1 /* KZ_ConstraintsFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KZ_ConstraintsFramework.framework; sourceTree = "<group>"; };
 		FDFD10BC32C97FE373A5482B /* Pods-KZ_Constraints.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KZ_Constraints.release.xcconfig"; path = "Pods/Target Support Files/Pods-KZ_Constraints/Pods-KZ_Constraints.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,7 +59,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22FD13549CDEE1676B621402 /* Pods_KZ_Constraints.framework in Frameworks */,
-				AEDC0F941FC1D12700752728 /* KZ_ConstraintsFramework.framework in Frameworks */,
+				AEA5EBE21FC2A8B1003D7BD1 /* KZ_ConstraintsFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +112,7 @@
 				AE1AAA761EC0B49C0005B5C7 /* ConstraintViewController.m */,
 				AE1AAA771EC0B49C0005B5C7 /* MasonryViewController.h */,
 				AE1AAA781EC0B49C0005B5C7 /* MasonryViewController.m */,
-				AE1AAA741EC0B46D0005B5C7 /* Constraints */,
+				AEA5EBE01FC2A8B1003D7BD1 /* Constraints */,
 				AE1AAA661EC0B4550005B5C7 /* Main.storyboard */,
 				AE1AAA691EC0B4550005B5C7 /* Assets.xcassets */,
 				AE1AAA6B1EC0B4550005B5C7 /* LaunchScreen.storyboard */,
@@ -117,10 +130,10 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		AE1AAA741EC0B46D0005B5C7 /* Constraints */ = {
+		AEA5EBE01FC2A8B1003D7BD1 /* Constraints */ = {
 			isa = PBXGroup;
 			children = (
-				AEDC0F931FC1D12700752728 /* KZ_ConstraintsFramework.framework */,
+				AEA5EBE11FC2A8B1003D7BD1 /* KZ_ConstraintsFramework.framework */,
 			);
 			path = Constraints;
 			sourceTree = "<group>";
@@ -138,6 +151,7 @@
 				AE1AAA581EC0B4550005B5C7 /* Resources */,
 				6CE8180B573AA50E435C7C6D /* [CP] Embed Pods Frameworks */,
 				D1EC4E2F3EFC2C39C8143612 /* [CP] Copy Pods Resources */,
+				AEDC0F721FC1D03200752728 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -392,6 +406,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = TGTFTDLM8G;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -417,6 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = TGTFTDLM8G;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
