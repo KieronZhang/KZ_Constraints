@@ -1,9 +1,15 @@
-platform :ios, ‘8.0’
-
 use_frameworks!
 
-target 'KZ_Constraints’ do
+target 'KZ_Constraints_iOS' do
     
+    platform :ios, '8.0'
     pod 'Masonry'
+    
+end
 
+target 'KZ_Constraints_macOS' do
+    
+    platform :osx, '10.10'
+    pod 'Masonry'
+    
 end
