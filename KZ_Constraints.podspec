@@ -10,8 +10,10 @@ Pod::Spec.new do |s|
 
     s.source = {:git => 'https://github.com/KieronZhang/KZ_Constraints.git', :tag => s.version, :submodules => true}
     s.xcconfig = {'OTHER_LDFLAGS' => '-ObjC'}
-    s.frameworks = 'UIKit', 'Foundation'
     s.requires_arc = true
+
+    s.ios.frameworks = 'Foundation', 'UIKit'
+    s.osx.frameworks = 'Foundation', 'AppKit'
 
     s.ios.deployment_target = '8.0'
     s.osx.deployment_target = '10.10'
