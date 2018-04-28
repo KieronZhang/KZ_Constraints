@@ -31,9 +31,12 @@ typedef NS_OPTIONS(NSInteger, KZ_LayoutAttribute) {
     KZ_LayoutAttribute_CenterY = 1 << 9,
     KZ_LayoutAttribute_Baseline = 1 << 10,
     
-#if (__IPHONE_OS_VERSION_MIN_REQUIRED >= 80000)
+#if (__IPHONE_OS_VERSION_MIN_REQUIRED >= 80000) || (__MAC_OS_X_VERSION_MIN_REQUIRED >= 101100)
     KZ_LayoutAttribute_LastBaseline = 1 << 11,
     KZ_LayoutAttribute_FirstBaseline = 1 << 12,
+#endif
+
+#if (__IPHONE_OS_VERSION_MIN_REQUIRED >= 80000)
     KZ_LayoutAttribute_LeftMargin = 1 << 13,
     KZ_LayoutAttribute_RightMargin = 1 << 14,
     KZ_LayoutAttribute_TopMargin = 1 << 15,
