@@ -32,9 +32,9 @@
     rightView.backgroundColor = [UIColor blueColor];
     [backgroundView1 addSubview:rightView];
     
-    [backgroundView1 addConstraintsWithAttribute:KZ_LayoutAttribute_Left | KZ_LayoutAttribute_Right equalValue:@0];
-    [backgroundView1 addConstraintsWithAttribute:KZ_LayoutAttribute_Top equalValue:@100];
-    [backgroundView1 addConstraintsWithAttribute:KZ_LayoutAttribute_Height equalValue:@100];
+    [backgroundView1 kz_addConstraintsWithAttribute:KZ_LayoutAttribute_Left | KZ_LayoutAttribute_Right equalValue:@0];
+    [backgroundView1 kz_addConstraintsWithAttribute:KZ_LayoutAttribute_Top equalValue:@100];
+    [backgroundView1 kz_addConstraintsWithAttribute:KZ_LayoutAttribute_Height equalValue:@100];
     
     [leftView.kz_left addConstraintEqualTo:@20];
     [leftView.kz_width addConstraintEqualTo:@100];
@@ -58,7 +58,7 @@
     rightLabel.textAlignment = NSTextAlignmentCenter;
     [backgroundView2 addSubview:rightLabel];
     
-    [backgroundView2 addConstraintsUseFrameWithAttribute:KZ_LayoutAttribute_Left | KZ_LayoutAttribute_Right | KZ_LayoutAttribute_Top | KZ_LayoutAttribute_Height];
+    [backgroundView2 kz_addConstraintsUseFrameWithAttribute:KZ_LayoutAttribute_Left | KZ_LayoutAttribute_Right | KZ_LayoutAttribute_Top | KZ_LayoutAttribute_Height];
     
     [leftLabel.kz_left.kz_equalTo(30) binding];
     [leftLabel.kz_height.kz_equalTo(60) binding];
@@ -67,10 +67,19 @@
     [rightLabel.kz_right.kz_equalTo(-30) binding];
     [rightLabel.kz_top.kz_bottom.kz_equalTo(leftLabel) binding];
     [@[leftLabel, rightLabel].kz_width.kz_equalTo(100) binding];
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(0, CGRectGetHeight(self.view.bounds) - 100, CGRectGetWidth(self.view.bounds), 100);
+    button.backgroundColor = [UIColor redColor];
+    [button addTarget:self action:@selector(buttonTapped) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+    
+    [button.kz_left.kz_right.kz_bottom.kz_equalTo(0) binding];
+    [button.kz_height.kz_equalTo(100) binding];
 }
 
 - (void)buttonTapped {
-//    [backgroundView1.kz_height.equalTo(@200) constraint];
+    [backgroundView1.kz_height.kz_equalTo(@200) binding];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -9,6 +9,9 @@
 #import "MasonryViewController.h"
 #import "Masonry.h"
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wimplicit-retain-self"
+
 @interface MasonryViewController ()
 
 @end
@@ -95,6 +98,11 @@
     button.backgroundColor = [UIColor redColor];
     [button addTarget:self action:@selector(buttonTapped) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
+    
+    [button mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.bottom.right.mas_equalTo(@0);
+        make.height.mas_equalTo(@100);
+    }];
 }
 
 - (void)buttonTapped {
@@ -106,5 +114,7 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+
+#pragma clang diagnostic pop
 
 @end

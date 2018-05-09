@@ -29,9 +29,9 @@
     rightView.layer.backgroundColor = [NSColor blueColor].CGColor;
     [backgroundView1 addSubview:rightView];
     
-    [backgroundView1 addConstraintsWithAttribute:KZ_LayoutAttribute_Left | KZ_LayoutAttribute_Right equalValue:@0];
-    [backgroundView1 addConstraintsWithAttribute:KZ_LayoutAttribute_Top equalValue:@100];
-    [backgroundView1 addConstraintsWithAttribute:KZ_LayoutAttribute_Height equalValue:@100];
+    [backgroundView1 kz_addConstraintsWithAttribute:KZ_LayoutAttribute_Left | KZ_LayoutAttribute_Right equalValue:@0];
+    [backgroundView1 kz_addConstraintsWithAttribute:KZ_LayoutAttribute_Top equalValue:@100];
+    [backgroundView1 kz_addConstraintsWithAttribute:KZ_LayoutAttribute_Height equalValue:@100];
     
     [leftView.kz_left addConstraintEqualTo:@20];
     [leftView.kz_width addConstraintEqualTo:@100];
@@ -55,7 +55,7 @@
     rightTextField.layer.backgroundColor = [NSColor blueColor].CGColor;
     [backgroundView2 addSubview:rightTextField];
     
-    [backgroundView2 addConstraintsUseFrameWithAttribute:KZ_LayoutAttribute_Left | KZ_LayoutAttribute_Right | KZ_LayoutAttribute_Top | KZ_LayoutAttribute_Height];
+    [backgroundView2 kz_addConstraintsUseFrameWithAttribute:KZ_LayoutAttribute_Left | KZ_LayoutAttribute_Right | KZ_LayoutAttribute_Top | KZ_LayoutAttribute_Height];
     
     [leftTextField.kz_left.kz_equalTo(30) binding];
     [leftTextField.kz_height.kz_equalTo(60) binding];

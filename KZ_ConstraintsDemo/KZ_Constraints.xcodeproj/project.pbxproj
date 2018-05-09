@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AE356B7F20948CED003A98E3 /* KZ_Constraints_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE356B7E20948CED003A98E3 /* KZ_Constraints_iOS.framework */; };
-		AE356B8120948CF4003A98E3 /* KZ_Constraints_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE356B8020948CF4003A98E3 /* KZ_Constraints_macOS.framework */; };
+		AE40047A20A2FEAB00017619 /* KZ_Constraints_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE40047920A2FEAB00017619 /* KZ_Constraints_iOS.framework */; };
+		AE40047C20A2FEB200017619 /* KZ_Constraints_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE40047B20A2FEB200017619 /* KZ_Constraints_macOS.framework */; };
 		AEA17A0D209456C800A1D096 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA17A0C209456C800A1D096 /* AppDelegate.m */; };
 		AEA17A10209456C800A1D096 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA17A0F209456C800A1D096 /* ViewController.m */; };
 		AEA17A12209456C900A1D096 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEA17A11209456C900A1D096 /* Assets.xcassets */; };
@@ -32,8 +32,8 @@
 		79814FBBA6BB7A14B10D6347 /* Pods-KZ_Constraints_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KZ_Constraints_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KZ_Constraints_iOS/Pods-KZ_Constraints_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		7B1A0C5B33C1C287A3DB7866 /* Pods_KZ_Constraints_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KZ_Constraints_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EEDCE12F1F4EB6268190F8A /* Pods-KZ_Constraints_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KZ_Constraints_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-KZ_Constraints_iOS/Pods-KZ_Constraints_iOS.release.xcconfig"; sourceTree = "<group>"; };
-		AE356B7E20948CED003A98E3 /* KZ_Constraints_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KZ_Constraints_iOS.framework; sourceTree = "<group>"; };
-		AE356B8020948CF4003A98E3 /* KZ_Constraints_macOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KZ_Constraints_macOS.framework; sourceTree = "<group>"; };
+		AE40047920A2FEAB00017619 /* KZ_Constraints_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KZ_Constraints_iOS.framework; sourceTree = "<group>"; };
+		AE40047B20A2FEB200017619 /* KZ_Constraints_macOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KZ_Constraints_macOS.framework; sourceTree = "<group>"; };
 		AEA17A09209456C800A1D096 /* KZ_Constraints_macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KZ_Constraints_macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEA17A0B209456C800A1D096 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AEA17A0C209456C800A1D096 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE356B8120948CF4003A98E3 /* KZ_Constraints_macOS.framework in Frameworks */,
+				AE40047C20A2FEB200017619 /* KZ_Constraints_macOS.framework in Frameworks */,
 				EE984209DE8CCA9393C272DE /* Pods_KZ_Constraints_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE356B7F20948CED003A98E3 /* KZ_Constraints_iOS.framework in Frameworks */,
+				AE40047A20A2FEAB00017619 /* KZ_Constraints_iOS.framework in Frameworks */,
 				C3BCF9EFED116E04CF7A91DF /* Pods_KZ_Constraints_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,7 +134,7 @@
 		AEA17A1D209456F400A1D096 /* Constraints */ = {
 			isa = PBXGroup;
 			children = (
-				AE356B8020948CF4003A98E3 /* KZ_Constraints_macOS.framework */,
+				AE40047B20A2FEB200017619 /* KZ_Constraints_macOS.framework */,
 			);
 			path = Constraints;
 			sourceTree = "<group>";
@@ -163,7 +163,7 @@
 		AEC29324208EE03000198A0E /* Constraints */ = {
 			isa = PBXGroup;
 			children = (
-				AE356B7E20948CED003A98E3 /* KZ_Constraints_iOS.framework */,
+				AE40047920A2FEAB00017619 /* KZ_Constraints_iOS.framework */,
 			);
 			path = Constraints;
 			sourceTree = "<group>";
