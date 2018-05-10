@@ -58,6 +58,10 @@
     rightLabel.textAlignment = NSTextAlignmentCenter;
     [backgroundView2 addSubview:rightLabel];
     
+    centerView = [[UIView alloc] init];
+    centerView.backgroundColor = [UIColor orangeColor];
+    [backgroundView2 addSubview:centerView];
+    
     [backgroundView2 kz_addConstraintsUseFrameWithAttribute:KZ_LayoutAttribute_Left | KZ_LayoutAttribute_Right | KZ_LayoutAttribute_Top | KZ_LayoutAttribute_Height];
     
     [leftLabel.kz_left.kz_equalTo(30) binding];
@@ -67,6 +71,9 @@
     [rightLabel.kz_right.kz_equalTo(-30) binding];
     [rightLabel.kz_top.kz_bottom.kz_equalTo(leftLabel) binding];
     [@[leftLabel, rightLabel].kz_width.kz_equalTo(100) binding];
+    
+    [centerView.kz_width.kz_height.kz_equalTo(50) binding];
+    [centerView.kz_center.kz_equalTo(backgroundView2) binding];
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake(0, CGRectGetHeight(self.view.bounds) - 100, CGRectGetWidth(self.view.bounds), 100);

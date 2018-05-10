@@ -16,6 +16,7 @@
     UIView *backgroundView2;
     UILabel *leftLabel;
     UILabel *rightLabel;
+    UIView *centerView;
 }
 
 @end

@@ -72,6 +72,10 @@
     rightLabel.textAlignment = NSTextAlignmentCenter;
     [backgroundView2 addSubview:rightLabel];
     
+    centerView = [[UIView alloc] init];
+    centerView.backgroundColor = [UIColor orangeColor];
+    [backgroundView2 addSubview:centerView];
+    
     [backgroundView2 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.mas_equalTo(@0);
         make.top.mas_equalTo(@250);
@@ -93,6 +97,11 @@
         make.baseline.mas_equalTo(leftLabel.mas_baseline);
     }];
     
+    [centerView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.height.mas_equalTo(@50);
+        make.center.mas_equalTo(backgroundView2);
+    }];
+    
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake(0, CGRectGetHeight(self.view.bounds) - 100, CGRectGetWidth(self.view.bounds), 100);
     button.backgroundColor = [UIColor redColor];
@@ -100,7 +109,7 @@
     [self.view addSubview:button];
     
     [button mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.bottom.right.mas_equalTo(@0);
+        make.left.right.bottom.mas_equalTo(@0);
         make.height.mas_equalTo(@100);
     }];
 }
