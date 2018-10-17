@@ -20,8 +20,8 @@
 		AEC29315208EDE9F00198A0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC29314208EDE9F00198A0E /* main.m */; };
 		AEC29320208EDFFD00198A0E /* ConstraintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC2931F208EDFFD00198A0E /* ConstraintViewController.m */; };
 		AEC29323208EE00500198A0E /* MasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC29322208EE00500198A0E /* MasonryViewController.m */; };
-		AEF94D742175EC8B0063EE69 /* KZ_Constraints_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF94D732175EC8B0063EE69 /* KZ_Constraints_iOS.framework */; };
-		AEF94D762175EC8F0063EE69 /* KZ_Constraints_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF94D752175EC8F0063EE69 /* KZ_Constraints_macOS.framework */; };
+		AEF94D882176DF520063EE69 /* KZ_Constraints_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF94D872176DF510063EE69 /* KZ_Constraints_iOS.framework */; };
+		AEF94D8A2176DF570063EE69 /* KZ_Constraints_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF94D892176DF570063EE69 /* KZ_Constraints_macOS.framework */; };
 		C3BCF9EFED116E04CF7A91DF /* Pods_KZ_Constraints_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 698F5185FBBBAB18B8E26B81 /* Pods_KZ_Constraints_iOS.framework */; };
 		EE984209DE8CCA9393C272DE /* Pods_KZ_Constraints_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1A0C5B33C1C287A3DB7866 /* Pods_KZ_Constraints_macOS.framework */; };
 /* End PBXBuildFile section */
@@ -56,8 +56,8 @@
 		AEC2931F208EDFFD00198A0E /* ConstraintViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConstraintViewController.m; sourceTree = "<group>"; };
 		AEC29321208EE00500198A0E /* MasonryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasonryViewController.h; sourceTree = "<group>"; };
 		AEC29322208EE00500198A0E /* MasonryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasonryViewController.m; sourceTree = "<group>"; };
-		AEF94D732175EC8B0063EE69 /* KZ_Constraints_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KZ_Constraints_iOS.framework; sourceTree = "<group>"; };
-		AEF94D752175EC8F0063EE69 /* KZ_Constraints_macOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KZ_Constraints_macOS.framework; sourceTree = "<group>"; };
+		AEF94D872176DF510063EE69 /* KZ_Constraints_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KZ_Constraints_iOS.framework; sourceTree = "<group>"; };
+		AEF94D892176DF570063EE69 /* KZ_Constraints_macOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KZ_Constraints_macOS.framework; sourceTree = "<group>"; };
 		B54CD101CF7B2F5282B83CC6 /* Pods-KZ_Constraints_macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KZ_Constraints_macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-KZ_Constraints_macOS/Pods-KZ_Constraints_macOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEF94D762175EC8F0063EE69 /* KZ_Constraints_macOS.framework in Frameworks */,
+				AEF94D8A2176DF570063EE69 /* KZ_Constraints_macOS.framework in Frameworks */,
 				EE984209DE8CCA9393C272DE /* Pods_KZ_Constraints_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEF94D742175EC8B0063EE69 /* KZ_Constraints_iOS.framework in Frameworks */,
+				AEF94D882176DF520063EE69 /* KZ_Constraints_iOS.framework in Frameworks */,
 				C3BCF9EFED116E04CF7A91DF /* Pods_KZ_Constraints_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,7 +134,7 @@
 		AEA17A1D209456F400A1D096 /* Constraints */ = {
 			isa = PBXGroup;
 			children = (
-				AEF94D752175EC8F0063EE69 /* KZ_Constraints_macOS.framework */,
+				AEF94D892176DF570063EE69 /* KZ_Constraints_macOS.framework */,
 			);
 			path = Constraints;
 			sourceTree = "<group>";
@@ -163,7 +163,7 @@
 		AEC29324208EE03000198A0E /* Constraints */ = {
 			isa = PBXGroup;
 			children = (
-				AEF94D732175EC8B0063EE69 /* KZ_Constraints_iOS.framework */,
+				AEF94D872176DF510063EE69 /* KZ_Constraints_iOS.framework */,
 			);
 			path = Constraints;
 			sourceTree = "<group>";
