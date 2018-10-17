@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#if TARGET_OS_IPHONE
+#if TARGET_OS_IOS
 #import <UIKit/UIKit.h>
 #define KZ_View UIView
 #define KZ_EdgeInsets UIEdgeInsets
-#elif TARGET_OS_MAC
+#elif TARGET_OS_OSX
 #import <Cocoa/Cocoa.h>
 #define KZ_View NSView
 #define KZ_EdgeInsets NSEdgeInsets

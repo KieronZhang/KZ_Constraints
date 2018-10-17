@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
     s.name = 'KZ_Constraints'
-    s.version = '0.1.6'
+    s.version = '0.1.7'
     s.summary = 'iOS & macOS Constraints.'
     s.homepage = 'https://github.com/KieronZhang/KZ_Constraints'
     s.license = {:type => 'MIT', :file => 'LICENSE'}
