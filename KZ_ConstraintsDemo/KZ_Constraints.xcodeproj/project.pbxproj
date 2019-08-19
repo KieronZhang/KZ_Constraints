@@ -323,7 +323,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-KZ_Constraints_macOS/Pods-KZ_Constraints_macOS-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-KZ_Constraints_macOS/Pods-KZ_Constraints_macOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Masonry-macOS/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -332,7 +332,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KZ_Constraints_macOS/Pods-KZ_Constraints_macOS-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KZ_Constraints_macOS/Pods-KZ_Constraints_macOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FEF041BF80A820638E281B27 /* [CP] Embed Pods Frameworks */ = {
@@ -341,7 +341,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-KZ_Constraints_iOS/Pods-KZ_Constraints_iOS-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-KZ_Constraints_iOS/Pods-KZ_Constraints_iOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Masonry-iOS/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -350,7 +350,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KZ_Constraints_iOS/Pods-KZ_Constraints_iOS-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KZ_Constraints_iOS/Pods-KZ_Constraints_iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
